@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+           
+    <xs:element name="lands">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="land"  minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="land">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="municipality" type="xs:string"></xs:element>
+                <xs:element name="province" type="xs:string"></xs:element>
+                <xs:element name="surface" type="xs:decimal"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

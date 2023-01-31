@@ -1,0 +1,11 @@
+#error-surface,
+#error-province-name,
+#error-cultiveZone-name,
+#error-municipality-name {
+  color: red;
+  display: none;
+}
+
+.card-text {
+  text-align: right;
+}
